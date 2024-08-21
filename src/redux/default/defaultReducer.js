@@ -1,7 +1,7 @@
 import { SET_NAME_MODULE } from "./defaultTypes";
 
 const initialState = {
-    name: '',
+    name: 'Dev FrontEnd with React - defaultReducer global variable',
 };
 
 const defaultReducer = (state = initialState, action)  => {
