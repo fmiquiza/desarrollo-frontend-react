@@ -1,7 +1,5 @@
 import Logo from './Default/_components/logo';
 import Description from './Default/_components/Description';
-import Content from './Default/_components/Content';
-import Github from './Default/_components/Github';
 
 import OpenLink from '../components/OpenLink';
 
