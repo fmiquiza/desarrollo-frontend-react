@@ -23,10 +23,6 @@ const Default = () => {
             <LessonInfo unitNumber="11" title="Intro to components and props" />
             <LessonInfo unitNumber="15" title="Context API for global states in apps" />
             <br></br>
-
-
-
-
              </header>
         </div>
     )
