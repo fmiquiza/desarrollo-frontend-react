@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import { useState } from "react";   
 
 const Contador = () => {
-    const [contador, setContador] = useState(10);
+    const [contador, setContador] = useState(0);
     
     const handleContador = () => {
         setContador(contador + 1);
@@ -10,7 +11,28 @@ const Contador = () => {
     const substractContador = () => {
         setContador(contador - 1);
     }
- 
+
+    // La funcion useEffect se ejecuta cuando el Componente se haya montado.
+    useEffect (() => {
+        setContador(12);
+    }, 
+    []);
+
+    // This special function executes when value of Contador has changed.
+    useEffect (() => {
+        if  (contador === 15) {
+            alert('Contador es 15')
+        }
+    }, 
+    [contador]);
+
+    // La funcion useEffect se ejecuta cuando el Componente se haya montado.
+    useEffect (() => {
+        return  () => {
+            console.log('Componente se desmonta');
+        }
+    });
+
 
     return (
         <>
