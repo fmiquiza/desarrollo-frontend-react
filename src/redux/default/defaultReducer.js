@@ -5,7 +5,7 @@ const initialState = {
 };
 
 const defaultReducer = (state = initialState, action)  => {
-    switch (action){
+    switch (action.type){
         case SET_NAME_MODULE : {
             return {
                 ...state,
