@@ -6,6 +6,10 @@ const Contador = () => {
     const handleContador = () => {
         setContador(contador + 1);
     }
+
+    const substractContador = () => {
+        setContador(contador - 1);
+    }
  
 
     return (
@@ -14,6 +18,10 @@ const Contador = () => {
         <h3>{contador}</h3>
         <div>
             <button onClick={handleContador}>Incrementar contador</button>
+        </div>
+
+        <div>
+            <button onClick={substractContador}>Lab 8: Disminuir contador</button>
         </div>
         </>
     );
