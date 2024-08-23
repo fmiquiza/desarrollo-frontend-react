@@ -2,6 +2,16 @@ import { useSelector, useDispatch } from "react-redux";
 import {useEffect} from "react";
 import {setProducts} from "../../../redux/product/productActions";
 
+
+import FilterableProductTable from '../_components/FilterableProductTable';
+/*
+import FilterableProductTable from "./FilterableProductTable";
+import ProductRow from "./ProductRow";
+import ProductCategoryRow from "./ProductCategoryRow";
+import ProductTable from "./ProductTable";
+import SearchBar from "./SearchBar";
+*/
+
 const Home = () => {
     const product = useSelector((state) => state.product);
     const dispatch = useDispatch();
@@ -17,12 +27,26 @@ const Home = () => {
                 { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
             ])
         )
-    }, [dispatch]);
+    }, [dispatch]); //fixed variable reference
 
     return (
         <>
             <h5>{JSON.stringify(product.PRODUCTS)}</h5>
+            <br/>
+            <br/>
+            <h3> -- Utilizando componentes  -- </h3>
+            <h1>Fruit Products</h1>
+            <FilterableProductTable products={product.PRODUCTS}/>
         </>
+
+
+        /*<FilterableProductTable/>
+        <ProductCategoryRow/>
+        <ProductRow/>
+        <ProductTable/>
+        <SearchBar/> 
+        <FilterableProductTable products={product.PRODUCTS} />
+        */
     );
 };
 
