@@ -10,7 +10,7 @@ import { useState } from "react";
 import {cleanFormData} from "../../redux/form/formActions";
 import ModalLogout from "../../components/ModalLogout";
 import { password } from "../../redux/form/formReducer";
-
+import { Link } from "react-router-dom";
 
 //
 
@@ -125,7 +125,8 @@ const LoginForm = () => {
                     </div>
                     <div className="button-container">
                         <button onClick={showModal} type="submit">Submit</button>
-                        <button onClick={showLogOut}> LogOut System</button>
+                        <span style={{ marginLeft: '20px' }} />
+                        <Link onClick={showLogOut} style={{ color: 'blue', textDecoration: 'none' }}> Logout</Link>
                     </div>
                 </form>
             </div>
