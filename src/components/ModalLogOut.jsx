@@ -17,7 +17,7 @@ const modalLogout=({visible,message,onClose,sure})=>{
             <div>
                 <p>
                     {message}
-                    <button onClick={sure}>Press to LogOut - FMIR</button>
+                    <button onClick={sure}>Presionar para salir!!!</button>
                 </p>
                 
             </div>

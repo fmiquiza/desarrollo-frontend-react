@@ -73,14 +73,14 @@ const LoginForm = () => {
         >
             <ModalSubmit
                 visible={showModalSubmit}
-                message="Password Incorrecto - FMIR sec"
+                message="Password Incorrecto."
                 onClose={hideModalSubmit}
             />
 
             <ModalLogout 
             
                  visible={showmodalLogout} 
-                 message="¿Estás seguro de que quieres cerrar sesión LoginForm FMIR? " 
+                 message="¿Estás seguro de que quieres cerrar sesión? " 
                 onClose={hideLogOut}
                 sure={salir}
             />
@@ -89,7 +89,7 @@ const LoginForm = () => {
             <div className="container">
                 <form onSubmit={handleSubmit}>
                     <h5>username: {form.formData.username}</h5>
-                    <h5>email: {form.formData.email}</h5>
+                    
                     <div>
                         <label htmlFor="username">Username</label>
                         <input

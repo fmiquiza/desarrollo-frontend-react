@@ -157,4 +157,9 @@ form div input {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.Bienvenido {
+  color: #fff;
+  margin-right: 'right' 
+}
 /* styles for modals */
