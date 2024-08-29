@@ -1,9 +1,9 @@
 import { SET_FORM_DATA } from './formTypes';
-import { CLEAN_FORM_DATA } from './formTypes'
-import { pass } from "./formReducer";
+import { CLEAN_FORM_DATA } from "./formTypes"
+import { password } from "./formReducer";
 
 export const saveFormData = (formData) => {
-    if (formData.password==pass) {
+    if (formData.password==password) {
         return {
             type: SET_FORM_DATA,
             payload: formData,
@@ -17,3 +17,5 @@ export const cleanFormData = (formData) => {
         payload:formData,
     }
 }
+
+

@@ -9,7 +9,7 @@ import { useState } from "react";
 //
 import {cleanFormData} from "../../redux/form/formActions";
 import ModalLogout from "../../components/ModalLogout";
-import { pass } from "../../redux/form/formReducer";
+import { password } from "../../redux/form/formReducer";
 
 
 //
@@ -28,7 +28,7 @@ const LoginForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(values);
-        if (values.password==pass) {
+        if (values.password==password) {
             dispatch(saveFormData(values));
         }
         console.log(saveFormData(values));
@@ -39,7 +39,7 @@ const LoginForm = () => {
     };
 
     const showModal = () => {
-        if (values.password!=pass) {
+        if (values.password!=password) {
             setShowModalSubmit(true);
         }
         
