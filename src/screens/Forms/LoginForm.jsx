@@ -8,7 +8,7 @@ import { useState } from "react";
 
 //
 import {resetFormData} from "../../redux/form/formActions";
-import ModalLogout from "../../components/ModalLogout";
+import ModalLogout from "../../components/ModalLogOut";
 import { password } from "../../redux/form/formReducer";
 import { Link } from "react-router-dom";
 //
