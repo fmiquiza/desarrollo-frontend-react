@@ -6,7 +6,7 @@ import LoginForm from "../screens/Forms/LoginForm";
 
 import App from "../App";
 
-import LandingPage from '../../../../MODULO7/desarrollo-frontend-react/src/screens/LandingPage/LandingPage';
+import LandingPage from '../screens/LandingPage/LandingPage';
 const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-react' : '/';
 
 const routes = createBrowserRouter([
