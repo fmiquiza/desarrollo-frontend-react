@@ -3,14 +3,14 @@ import React from 'react';
 const LandingPage = () => {
   return (
     
-    <div className="titulo">
-      <div className="div2">
-        <h1>Modulo 7: DESARROLLO FRONTEND CON REACTJS</h1>
+    <div className="title">
+      <div className="mod7title">
+        <h1>Modulo 7: DESARROLLO FRONTEND CON <br></br>REACTJS.</h1>
       </div>
 
-      <div className="div3">
+      <div className="welcome-react">
         <h2>Bienvenido</h2>
-        <div className='div4'></div>
+        <div className='contents'></div>
         <p>
           Este módulo se centra en el uso de <strong>React</strong>, 
           incluyendo la creación de <strong>componentes</strong>, 
@@ -20,7 +20,7 @@ const LandingPage = () => {
 
       <div style={{ padding: '20px' }}>
         <h2>Temas Cubiertos</h2>
-        <div className='div4'></div>
+        <div className='contents'></div>
         <table className='tabla'>
           <tbody>
             <tr>
@@ -39,15 +39,15 @@ const LandingPage = () => {
 
       <div style={{ padding: '20px' }}>
         <h2>Recursos Adicionales</h2>
-        <div className='div4'></div>
+        <div className='contents'></div>
         <p>
           Para profundizar en los temas cubiertos, consulta los siguientes recursos:
         </p>
       </div>
 
-      <div className='div5'>
-      <div className='div6'></div>
-        © 2024 Modulo 7. USIP.
+      <div className='gradiente'>
+      <div className='row'></div>
+        © 2024 Modulo 7 (Fernando Iquiza). USIP.
       </div>
     </div>
   );

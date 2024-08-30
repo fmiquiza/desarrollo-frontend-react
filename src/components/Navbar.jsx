@@ -16,7 +16,7 @@ const Navbar = () => {
                     <Link to="/products">Product</Link>
                 </li>
                 <li>
-                    <Link to="/login">LoginForm</Link>
+                    <Link to="/login">Forms</Link>
                 </li>
                 <li style={{ marginLeft: 'auto' }}> 
                 {formData.username && formData.email && (

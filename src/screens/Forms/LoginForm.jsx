@@ -7,7 +7,7 @@ import ModalSubmit from "../../components/ModalSubmit";
 import { useState } from "react";
 
 //
-import {cleanFormData} from "../../redux/form/formActions";
+import {resetFormData} from "../../redux/form/formActions";
 import ModalLogout from "../../components/ModalLogout";
 import { password } from "../../redux/form/formReducer";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 //
 
 const LoginForm = () => {
-    const [values, handleChange,clean] = useForm({ username: '', email: '', password:''});
+    const [values, handleChange,resetForm] = useForm({ username: '', email: '', password:''});
     const [showModalSubmit, setShowModalSubmit] = useState(false);
     const form = useSelector(state => state.form);
     const dispatch = useDispatch();
@@ -60,8 +60,8 @@ const LoginForm = () => {
     };
 
     const salir = ()=>{
-        dispatch(cleanFormData());
-        clean();
+        dispatch(resetFormData());
+        resetForm();
         setShowmodalLogout(false);
     };
 
@@ -88,7 +88,8 @@ const LoginForm = () => {
 
             <div className="container">
                 <form onSubmit={handleSubmit}>
-                    <h5>username: {form.formData.username}</h5>
+                    <h1 style={{ textAlign: 'center' }} className="LoginForm"> Login Form </h1>
+                    <h5>Username: {form.formData.username}</h5>
                     
                     <div>
                         <label htmlFor="username">Username</label>

@@ -11,7 +11,7 @@ export const saveFormData = (formData) => {
     }
 }
 
-export const cleanFormData = (formData) => {
+export const resetFormData = (formData) => {
     return {
         type: CLEAN_FORM_DATA,
         payload:formData,
