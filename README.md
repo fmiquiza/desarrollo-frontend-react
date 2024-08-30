@@ -11,6 +11,21 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+IMPORTANT INFO: If the PORT 3000 is being used in your machine, it'll display a question asking to use a different port, type Y (for yes)
+Once it's done, it'll show the following message in console:
+
+### `Compiled successfully!`
+
+### `You can now view desarrollo-frontend-react in the browser.`
+
+  ### `Local:            http://localhost:3001` (HERE you'll see a NEW port to access the application)
+  ### `On Your Network:  http://192.168.100.4:3001`
+
+### `Note that the development build is not optimized.`
+### `To create a production build, use npm run build.`
+
+webpack compiled successfully
+
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
@@ -18,7 +33,7 @@ You may also see any lint errors in the console.
 Log in with the following:
 - Username: (use any string here as user, i.e.: ReactUser)
 - Email:  (use any email, i.e.: reactUser@gmail.com)
-- Password: 'mod7ReactUSIP' (This value is HardCoded)
+- Password: 'mod7ReactUSIP' (This value is HardCoded just for Testing)
 
 ##
 
