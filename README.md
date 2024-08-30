@@ -14,6 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## Dummy Credentials to access Forms
+Log in with the following:
+- Username: (use any string here as user, i.e.: ReactUser)
+- Email:  (use any email, i.e.: reactUser@gmail.com)
+- Password: 'mod7ReactUSIP' (This value is HardCoded)
+
+##
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
